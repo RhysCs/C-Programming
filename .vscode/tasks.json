@@ -27,7 +27,8 @@
                 "-g",
                 "${file}",
                 "-o",
-                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+                "${fileDirname}\\${fileBasenameNoExtension}.exe",
+                "library.c"
             ],
             "options": {
                 "cwd": "${fileDirname}"
@@ -44,6 +45,7 @@
             "command": "C:\\MinGW\\bin\\gcc.exe",
             "args": [
                 "-fdiagnostics-color=always",
+                "library.c",
                 "-g",
                 "${file}",
                 "-o",
